@@ -8,8 +8,10 @@ class NEOAI:
     def __eq__(self, other):
         return self.umur == other.umur or self.nama == other.nama
     
-    def __it__(self, other):
+    def __It__(self, other):
+        return self.umur < other.umur
 neo1 = NEOAI("Agastya", 18)
 neo2 = NEOAI("Sassy", 20)
 neo3 = NEOAI("Juun", 21)
 print(neo1 == neo2)#perbandingan
+print(neo2 > neo3)
